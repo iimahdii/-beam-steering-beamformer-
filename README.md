@@ -18,7 +18,7 @@ This repository contains Jupyter notebooks and Python scripts for various beamfo
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/beamforming-techniques.git
+   git clone https://github.com/iimahdii/beamforming-techniques.git
    ```
 
 2. Navigate to the repository directory:
