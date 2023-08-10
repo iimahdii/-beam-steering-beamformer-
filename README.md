@@ -1,47 +1,47 @@
-# Beam Steering Beamformer
+# Beamforming Techniques
 
-This repository contains a basic implementation of a beam steering beamformer algorithm in Python. Beamforming is a signal processing technique used to enhance the signal coming from a specific direction while suppressing interference from other directions. In this example, we'll demonstrate a simple delay-and-sum beamforming algorithm.
+This repository contains Jupyter notebooks and Python scripts for various beamforming techniques implemented in the context of signal processing. Beamforming is a signal processing technique used to enhance the quality of received signals from a specific direction while suppressing interference and noise from other directions.
 
-## Getting Started
+## Contents
 
-To use this beamforming code, follow the steps below:
+- `LCMV_beamformer.ipynb`: Jupyter notebook showcasing the implementation of the Linearly Constrained Minimum Variance (LCMV) beamformer. This notebook was created using Google Colaboratory.
 
-1. Clone this repository to your local machine.
-2. Make sure you have Python 3.x installed.
-3. Install the required dependencies using the following command:
-4. Open the `beamformer.py` file and modify the parameters as needed:
+- `beamformer.py`: Python script implementing the LCMV beamformer algorithm. It demonstrates the implementation as a standalone Python script, making it easier to integrate into other projects.
 
-- `frequency`: The frequency of the signal in Hz.
-- `duration`: The duration of the generated signal in seconds.
-- `sample_rate`: The sample rate in samples per second.
-- `steering_angle`: The desired steering angle in degrees.
-- `array_positions`: Define the positions of the microphones in the array.
+- `conventional_beamformer.ipynb`: Jupyter notebook demonstrating the conventional beamforming technique. This notebook was created using Google Colaboratory.
 
-5. Run the `beamformer.py` script using the following command:
+- `mvdr_beamformer.ipynb`: Jupyter notebook showcasing the implementation of the Minimum Variance Distortionless Response (MVDR) beamformer. This notebook was created using Google Colaboratory.
 
-6. The beamformed signal will be generated and can be further analyzed or played.
+- `phase_shift_beamformer.ipynb`: Jupyter notebook demonstrating the phase-shift beamforming technique. This notebook was created using Google Colaboratory.
 
-## Algorithm Overview
+## Usage
 
-The beamforming algorithm in this example is a simplified delay-and-sum beamformer. It calculates time delays based on microphone positions and applies these delays to align signals before summing them up. The goal is to enhance the signal coming from a specific direction while attenuating signals from other directions.
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/beamforming-techniques.git
+   ```
 
-## Customization and Extensions
+2. Navigate to the repository directory:
+   ```
+   cd beamforming-techniques
+   ```
 
-This code provides a basic demonstration of beamforming. Depending on your specific use case and hardware setup, you may need to consider the following:
+3. Explore the different notebooks and Python script for the respective beamforming techniques.
 
-- Calibration: Proper calibration of microphone positions and sensitivities is essential for accurate beamforming.
-- Filtering: Applying filters can help improve the signal quality and reduce noise.
-- Room Acoustics: Room reflections and acoustic properties may impact the beamforming performance.
-- Real-time Processing: For real-time applications, consider optimizing the code for speed.
+4. Modify and adapt the code as needed for your specific use case or experiment.
 
-Feel free to customize and extend this code to suit your requirements. For more advanced beamforming techniques and implementations, consider consulting relevant literature and experts in the field.
+## Requirements
+
+- Python (3.6 or higher)
+- Jupyter Notebook (for running and editing the `.ipynb` files)
+- NumPy, SciPy (for numerical computations)
+
+## Contributing
+
+Contributions to this repository are welcome! If you find any issues, want to improve the code, or add more beamforming techniques, feel free to submit a pull request.
 
 ## License
 
-Free to use 
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-This code was inspired by beamforming techniques commonly used in audio signal processing and communication systems.
-
-
+```
